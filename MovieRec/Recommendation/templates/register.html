@@ -1,0 +1,55 @@
+<!-- This is the html template for the register page. To keep the same styling across the website, it is built by extending base.html
+     The page contains a form to allow the new user to enter their details, register and login to the website!
+-->
+
+{% extends 'base.html' %}
+
+{% block title %}
+
+Register Page
+
+{% endblock %}
+
+{% block content %}
+
+<body class="text-center">
+   
+    <div class="container"> 
+
+        <form method="POST" class="form-register" style="color:bisque">
+
+            {{ form.hidden_tag() }}
+            <h1 class="h3 nb-3 font-weight-normal">
+                Please Create your Account
+            </h1>
+            <br>
+        
+            {{ form.username.label() }}
+            {{ form.username(class="form-control",placeholder="User Name") }}
+        
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control",placeholder="Email Address") }}
+        
+            {{ form.password1.label() }}
+            {{ form.password1(class="form-control",placeholder="Enter Password") }}
+        
+            {{ form.password2.label() }}
+            {{ form.password2(class="form-control",placeholder="Re-enter Password") }}
+
+            <br>
+
+         <div class="checkbox nb-3">
+                <h7>Already have an account?</h7>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Login</a>
+         </div>
+
+            <br>
+
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+    
+        </form>
+        
+    </div>
+
+</body>
+{% endblock %}

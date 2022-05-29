@@ -1,0 +1,66 @@
+<!-- This is the html template for the about page. To keep the same styling across the website, it is built by extending base.html
+     The page explains the algorithms used in the recommendation system and different algorithms that are generally used in recommendation 
+     systems.
+-->
+
+{% extends 'base.html' %}
+{% block title %}
+    About Page
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+<br>
+<div class="overflow-hidden p-3 p-md-5 m-md-3 bg-dark" style="color:bisque">
+
+    <h1>Welcome to Watch It Next!</h1>
+    
+    <br>
+    
+    <h5 style="color:khaki">
+      Watch it Next is a Movie Recommendation website that is built by building the logic in <code>Python</code> and supported by <code>Flask, HTML</code> and <code>CSS Bootstrap</code>. It applies the principles of Maachine Learning to raw Movie Review files and converts it into valuable information!    
+    </h5>
+  
+    <br>
+    <br>
+  
+    <h1>Importance of Algorithms</h1>
+    <br>
+    <h5 style="color:khaki">
+      Any Recommendation Engine thrives on certain indispensible algorithms for it to work in an efficient manner. It would include various <code>search</code> algorithms to query its large database and return a specific asked value. It also includes <code>sorting</code> algorithms to efficiently return certain data in usable form. These algortihms make up the engine and we'll be talking about some in detail in the next module.
+    
+    </h5>
+      
+    <br>
+    <br>
+  
+    <h1>Algorithms used in Watch It Next</h1>
+    
+    <br>
+
+    <h5 style="color:khaki">
+      Watch It Next uses certain in-built functions to perform Search and Sort.<code> Tim Sort</code> is used while sorting the list of Recommendations based on the nearest distance to the searched movie.<code> Tim Sort</code> is a special derivation of <code> Merge Sort</code> and <code> Insertion Sort</code>. It works well while dealing with Real-World data. In the worst case scenario, <code> Tim sort</code> takes O(logn) time to sort. It also takes lesser memory allocation and comparisions as compared to <code> Quick Sort</code>
+    
+    </h5>
+  
+    <br>
+    <br>
+
+    <h1>KNN Algorithm</h1>
+    
+    <br>
+
+    <h5 style="color:khaki">
+      The <code> K Nearest Algorithm </code> is the most vital algorithm for the functioning of Watch It Next. It is one of the simplest Supervised Machine Learning Algorithm. It is mostly used for classification. <code>KNN ALgorithm</code> in Watch It Next calculates the nearest related movies corresponding to the Searched Movie using the parameter of <code>Cosine Distance</code>. The model is trained using the filtered data converted into a <code>Compressed Sparse Row Matrix</code> or <code>CSR_Matrix</code> as defined in the code. This helps to reduce the noise from the data and efficiently train the <code>KNN Algorithm</code>. The model returns 10 Nearest movies in reference to the Searched movie. 
+    </h5>
+
+    <br>
+    <br>
+  
+    <p class="text-center">A website made by Ishaan Rawal :)</p>
+  </div>
+
+
+{% endblock %}

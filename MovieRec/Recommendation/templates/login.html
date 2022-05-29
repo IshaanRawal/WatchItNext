@@ -1,0 +1,55 @@
+<!-- This is the html template for the login page. To keep the same styling across the website, it is built by extending base.html
+     The page contains a form to allow the registered user to enter their credentials and thus use the recommendation system.
+-->
+
+{% extends 'base.html' %}
+
+{% block title %}
+
+Login Page
+
+{% endblock %}
+
+{% block content %}
+
+<body class="text-center">
+
+    <div class="container">
+
+        <form method="POST" class="form-signin" style="color:bisque">
+            
+            {{ form.hidden_tag() }}
+
+            <h1 class="h3 nb-3 font-weight-normal">
+               Please Login
+             </h1>
+         
+         <br>
+
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="User Name") }}
+             
+        
+            {{ form.password.label() }}
+            {{ form.password(class="form-control", placeholder="Password") }}
+
+         <br>
+
+            <div class="checkbox nb-3">
+                <h7>Do not have an account?</h7>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a>
+            </div>
+
+            <br>
+        
+
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+
+        </form>
+
+
+    </div>
+
+</body>
+{% endblock %}
