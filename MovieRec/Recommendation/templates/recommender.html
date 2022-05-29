@@ -1,0 +1,43 @@
+<!-- This is the html template for the recommender page. To keep the same styling across the website, it is built by extending base.html
+     The page contains a form to allow the user to search their movie.
+-->
+
+
+{% extends 'base.html' %}
+
+{% block title %}
+
+Recommender Page
+
+{% endblock %}
+
+{% block content %}
+
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form" style="color:bisque">
+            {{ form.hidden_tag() }}
+            <br>
+            <br>
+            
+            <h1 class="h3 nb-3 font-weight-normal">
+               Search a Movie to get recommendations!
+             </h1>
+         <br>
+
+            {{ form.movie_name.label() }}
+            {{ form.movie_name(class="form-control", placeholder="Enter Movie Name") }}
+            
+         <br>
+         <br>
+            {{ form.search(class="btn btn-lg btn btn-primary") }}
+          
+            
+        </form>
+
+
+    </div>
+
+</body>
+
+{% endblock %}
