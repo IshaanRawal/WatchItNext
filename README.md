@@ -39,4 +39,4 @@ capitalization and get the results if the movie is present in the database and h
 
 * YOU NEED TO ONLY SEARCH THE MOVIE NAME AS IT IS METIONED IN THE CSV FILE
 
-For eg. Toy Story (1995) is present in the movies.csv, You could get movie recommendations by searching Toy Story on the recommender page.****
+For eg. Toy Story (1995) is present in the movies.csv, You could get movie recommendations by searching Toy Story on the recommender page.
