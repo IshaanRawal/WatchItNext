@@ -26,7 +26,7 @@ movies.csv, ratings.csv, final_dataset.csv, csr_data.npz, knn_model.txt included
 
 ----------------------------------------------------------------
 
-To run the website, use run.py present in the Recommendation folder.
+To run the website, use run.py present in the Recommendation folder. Once run.py is successfully executed, visit http://127.0.0.1:5000/ in your local browser to access the website.
 
 -----------------------------------------------------------------
 
