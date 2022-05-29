@@ -26,6 +26,10 @@ movies.csv, ratings.csv, final_dataset.csv, csr_data.npz, knn_model.txt included
 
 ----------------------------------------------------------------
 
+To run the website, use run.py present in the Recommendation folder.
+
+-----------------------------------------------------------------
+
 Searching Movies Efficiently on Watch It Next
 
 * The movies database contains a variety of Hollywood Movies. You can type in the movie name directly with the correct 
